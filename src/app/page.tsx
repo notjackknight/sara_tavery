@@ -63,14 +63,14 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 lg:px-10 md:py-8 flex flex-col flex-1">
           <div className="flex flex-1 md:min-h-0 items-center md:pl-12 lg:pl-20 xl:pl-28">
             <div className="w-full md:w-[58%] lg:w-[55%] text-left flex flex-col justify-center">
-              <h3 className="font-serif md:text-[34px] lg:text-[46px] xl:text-[58px] text-white mb-6 leading-[1.05] whitespace-nowrap drop-shadow-[0_2px_10px_rgba(15,46,57,0.5)]">
+              <h3 className="font-serif md:text-[34px] lg:text-[46px] xl:text-[58px] text-white mb-6 leading-[1.05] whitespace-nowrap [text-shadow:0_2px_10px_rgba(15,46,57,0.5)]">
                 A collaborative process.<br />
                 Meaningful results.
               </h3>
 
               <DiamondOrnament className="mb-6 max-w-md [&_*]:!stroke-white [&_*]:!fill-white" />
 
-              <p className="font-serif text-lg lg:text-xl text-white mb-8 leading-relaxed max-w-md drop-shadow-[0_1px_6px_rgba(15,46,57,0.5)]">
+              <p className="font-serif text-lg lg:text-xl text-white mb-8 leading-relaxed max-w-md [text-shadow:0_1px_6px_rgba(15,46,57,0.5)]">
                 I help nonprofits bring clarity to complex ideas, elevate their stories, and inspire action.
               </p>
 
@@ -108,10 +108,10 @@ export default function Home() {
         <div className="relative z-10 w-full h-[70dvh] flex flex-col items-center justify-between px-6 pt-6 pb-6 text-center">
           {/* Title */}
           <div className="w-full flex flex-col items-center">
-            <p className="font-sans text-xs tracking-[0.25em] uppercase text-white/90 mb-4 drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+            <p className="font-sans text-xs tracking-[0.25em] uppercase text-white/90 mb-4 [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
               By the Numbers
             </p>
-            <h2 className="font-serif text-4xl text-white leading-tight mb-6 drop-shadow-[0_2px_10px_rgba(15,46,57,0.6)]">
+            <h2 className="font-serif text-4xl text-white leading-tight mb-6 [text-shadow:0_2px_10px_rgba(15,46,57,0.6)]">
               Results you can measure
             </h2>
             <DiamondOrnament className="w-[70%] max-w-xs [&_*]:!stroke-white [&_*]:!fill-white" />
@@ -119,10 +119,10 @@ export default function Home() {
 
           {/* Hero stat */}
           <div className="w-full">
-            <div className="font-serif font-bold text-white text-7xl leading-none mb-3 drop-shadow-[0_2px_14px_rgba(15,46,57,0.7)]">
+            <div className="font-serif font-bold text-white text-7xl leading-none mb-3 [text-shadow:0_2px_14px_rgba(15,46,57,0.7)]">
               <CountUp end={50} prefix="$" suffix="M+" />
             </div>
-            <p className="font-serif text-white/90 text-base max-w-xs mx-auto drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+            <p className="font-serif text-white/90 text-base max-w-xs mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
               Raised for nonprofit clients and employers
             </p>
           </div>
@@ -130,26 +130,26 @@ export default function Home() {
           {/* Three smaller stats */}
           <div className="grid grid-cols-3 gap-4 w-full">
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 drop-shadow-[0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={200} suffix="+" />
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
                 Grants, appeals, and proposals written
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 drop-shadow-[0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={9} suffix="+" />
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
                 Years leading nonprofit development teams
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 drop-shadow-[0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 CFRE
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
                 Certified Fund Raising Executive
               </p>
             </div>

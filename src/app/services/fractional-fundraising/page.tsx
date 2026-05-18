@@ -72,13 +72,13 @@ export default function FractionalFundraising() {
         />
         <div className="absolute inset-0 bg-brand-navy/55" aria-hidden="true" />
         <div className="absolute inset-0 flex flex-col justify-center px-6 py-8 text-center">
-          <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-white/80 mb-4 drop-shadow-[0_1px_6px_rgba(15,46,57,0.6)]">
+          <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-white/80 mb-4 [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
             Services &nbsp;/&nbsp; Fractional Fundraising
           </p>
-          <h1 className="font-serif text-3xl text-white leading-[1.1] tracking-[-0.01em] mb-4 drop-shadow-[0_2px_10px_rgba(15,46,57,0.5)]">
+          <h1 className="font-serif text-3xl text-white leading-[1.1] tracking-[-0.01em] mb-4 [text-shadow:0_2px_10px_rgba(15,46,57,0.5)]">
             Senior leadership,<br />when you need it.
           </h1>
-          <p className="font-serif text-sm text-white/90 leading-relaxed italic max-w-md mx-auto drop-shadow-[0_1px_6px_rgba(15,46,57,0.5)]">
+          <p className="font-serif text-sm text-white/90 leading-relaxed italic max-w-md mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.5)]">
             The judgment of a Director of Development or VP of Philanthropy, on a monthly retainer scaled to your calendar and your budget.
           </p>
         </div>
