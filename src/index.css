@@ -10,14 +10,17 @@
 }
 
 body {
-  background-color: var(--color-brand-cream);
+  /* No background — let the navy on <html> show through during iOS Safari's
+     rubber-band overscroll at both the top and bottom of the page. The page's
+     own sections (hero, footer, etc.) paint their own backgrounds within the
+     scrollable content area. */
   color: var(--color-brand-navy);
   font-family: var(--font-serif);
 }
 
 html {
   scroll-behavior: smooth;
-  /* Overscroll/bounce area at the very top of the page */
+  /* Overscroll/bounce area at the very top AND bottom of the page */
   background-color: var(--color-brand-navy);
 }
 

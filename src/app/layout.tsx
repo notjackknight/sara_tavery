@@ -3,6 +3,7 @@ import '../index.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BookingModal from '@/components/BookingModal';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata: Metadata = {
   title: 'Sara Tavery | Philanthropy Communications',
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex flex-col min-h-screen">
+          <ScrollToTop />
           <Navbar />
           <main className="flex-grow flex flex-col">{children}</main>
           <Footer />
