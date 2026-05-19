@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import '../index.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -7,6 +7,12 @@ import BookingModal from '@/components/BookingModal';
 export const metadata: Metadata = {
   title: 'Sara Tavery | Philanthropy Communications',
   description: 'Clear, compelling communications that strengthen giving',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({

@@ -14,8 +14,11 @@ export default function Home() {
     <div className="bg-brand-cream min-h-screen">
       {/* Hero Section - Mobile (sticky image + navy block scrolls over) */}
       <section className="md:hidden relative w-full bg-brand-navy">
-        {/* Sticky photo: occupies the top half of the viewport, pins below the 5rem navbar */}
-        <div className="sticky top-20 w-full h-[calc(50dvh-2.5rem)] overflow-hidden">
+        {/* Sticky photo: occupies the top half of the viewport, pins below the 5rem navbar.
+            Uses svh (small viewport height) so the height is locked to Safari's
+            smallest-chrome state — prevents iOS Safari's URL bar animation from
+            re-flowing/zooming the image during scroll. */}
+        <div className="sticky top-20 w-full h-[calc(50svh-2.5rem)] overflow-hidden">
           <img
             src="/Hero.jpg"
             alt="Sara Tavery Portrait"
@@ -25,7 +28,7 @@ export default function Home() {
 
         {/* Navy block: scrolls up over the sticky image */}
         <div className="relative w-full bg-brand-navy z-10">
-          <div className="w-full h-[calc(50dvh-2.5rem)] flex flex-col items-center justify-between px-6 py-8 text-center">
+          <div className="w-full h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between px-6 py-8 text-center">
             {/* Text group */}
             <div className="w-full flex flex-col items-center">
               <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-5">
@@ -99,13 +102,13 @@ export default function Home() {
           Visually still feels like 1 viewport: image stays put while text scrolls up over it,
           and the next section (#why-us, with -mt below) scrolls up from below to cover the image —
           no blue strip, no dead space. */}
-      <section id="results" className="md:hidden relative w-full h-[140dvh]">
+      <section id="results" className="md:hidden relative w-full h-[140svh]">
         <MobileFixedBgImage />
         {/* Text overlay: matches the sticky image's height and sits on top of it.
             The image is a position:sticky child of this section, so it pins
             below the navbar while the section is in view and unpins automatically
             when the section scrolls past. */}
-        <div className="relative z-10 w-full h-[70dvh] flex flex-col items-center justify-between px-6 pt-6 pb-6 text-center">
+        <div className="relative z-10 w-full h-[70svh] flex flex-col items-center justify-between px-6 pt-6 pb-6 text-center">
           {/* Title */}
           <div className="w-full flex flex-col items-center">
             <p className="font-sans text-xs tracking-[0.25em] uppercase text-white/90 mb-4 [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
@@ -231,9 +234,10 @@ export default function Home() {
       </div>
 
       {/* Why Fractional
-          On mobile, this section is pulled up by 100dvh so it scrolls over the sticky image
-          in the results section above — providing the "next section covers it" effect. */}
-      <section id="why-us" className="relative bg-white py-12 md:py-14 px-4 md:overflow-hidden -mt-[70dvh] md:mt-0 z-10">
+          On mobile, this section is pulled up by 70svh so it scrolls over the sticky image
+          in the results section above — providing the "next section covers it" effect.
+          svh (not dvh) keeps the offset stable across iOS Safari's URL bar animation. */}
+      <section id="why-us" className="relative bg-white py-12 md:py-14 px-4 md:overflow-hidden -mt-[70svh] md:mt-0 z-10">
         <CornerBrackets />
         {/* Mobile-only corner brackets (top-left + top-right) */}
         <div aria-hidden="true" className="pointer-events-none absolute top-6 left-6 lg:hidden">
