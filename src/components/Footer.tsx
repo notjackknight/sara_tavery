@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Phone, Mail, Linkedin, MapPin, Copy, Check } from 'lucide-react';
 import DiamondOrnament from '@/components/DiamondOrnament';
 import CornerBrackets from '@/components/CornerBrackets';
@@ -206,6 +207,24 @@ export default function Footer() {
         <p className="font-sans text-sm tracking-wider opacity-80 uppercase">
           © 2026 Sara Tavery | Philanthropy Communications. All rights reserved.
         </p>
+        <nav
+          aria-label="Legal"
+          className="mt-3 flex items-center justify-center gap-3 font-sans text-[11px] tracking-[0.2em] uppercase text-white/55"
+        >
+          <Link
+            href="/privacy"
+            className="hover:text-white transition-colors duration-200"
+          >
+            Privacy
+          </Link>
+          <span aria-hidden="true" className="w-px h-3 bg-white/25" />
+          <Link
+            href="/terms"
+            className="hover:text-white transition-colors duration-200"
+          >
+            Terms
+          </Link>
+        </nav>
       </div>
     </footer>
   );
