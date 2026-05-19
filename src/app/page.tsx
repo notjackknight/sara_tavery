@@ -275,9 +275,9 @@ export default function Home() {
             return (
               <div className="w-full">
                 {/* Heading + intro — Mobile (sticky white card) */}
-                <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-[70%] max-w-[16rem] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
-                  <div className="text-center px-3 py-4">
-                    <h2 className="font-serif text-4xl text-brand-navy leading-tight">
+                <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-fit max-w-[90%] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
+                  <div className="text-center px-5 py-4">
+                    <h2 className="font-serif text-[2rem] text-brand-navy leading-tight whitespace-nowrap">
                       The Right Fit
                     </h2>
                   </div>
@@ -339,9 +339,9 @@ export default function Home() {
         </div>
 
         {/* Heading — Mobile (sticky translucent card) */}
-        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-[82%] max-w-[20rem] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
-          <div className="text-center px-3 py-4">
-            <h2 className="font-serif text-4xl text-brand-navy leading-tight whitespace-nowrap">
+        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-fit max-w-[90%] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
+          <div className="text-center px-5 py-4">
+            <h2 className="font-serif text-[2rem] text-brand-navy leading-tight whitespace-nowrap">
               How We Partner
             </h2>
           </div>
@@ -412,9 +412,9 @@ export default function Home() {
         </div>
 
         {/* Heading — Mobile (sticky translucent card) */}
-        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-[82%] max-w-[20rem] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
-          <div className="text-center px-3 py-4">
-            <h2 className="font-serif text-4xl text-brand-navy leading-tight whitespace-nowrap">
+        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-fit max-w-[90%] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
+          <div className="text-center px-5 py-4">
+            <h2 className="font-serif text-[2rem] text-brand-navy leading-tight whitespace-nowrap">
               Where I Focus
             </h2>
           </div>
@@ -527,9 +527,9 @@ export default function Home() {
         </div>
 
         {/* Heading — Mobile (sticky translucent card) */}
-        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-[70%] max-w-[16rem] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
-          <div className="text-center px-3 py-4">
-            <h2 className="font-serif text-4xl text-brand-navy leading-tight whitespace-nowrap">
+        <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-fit max-w-[90%] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
+          <div className="text-center px-5 py-4">
+            <h2 className="font-serif text-[2rem] text-brand-navy leading-tight whitespace-nowrap">
               About Me
             </h2>
           </div>
