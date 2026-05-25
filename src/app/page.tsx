@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* Navy block: scrolls up over the sticky image */}
         <div className="relative w-full bg-brand-navy z-10">
-          <div className="w-full h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between px-6 py-8 text-center">
+          <div className="w-full min-h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between gap-8 px-6 py-8 text-center">
             {/* Text group */}
             <div className="w-full flex flex-col items-center">
               <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-5">
@@ -111,10 +111,10 @@ export default function Home() {
         <div className="relative z-10 w-full h-[70svh] flex flex-col items-center justify-between px-6 pt-6 pb-6 text-center">
           {/* Title */}
           <div className="w-full flex flex-col items-center">
-            <p className="font-sans text-xs tracking-[0.25em] uppercase text-white/90 mb-4 [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+            <p className="font-sans text-xs tracking-[0.25em] uppercase text-white/90 mb-3 [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
               By the Numbers
             </p>
-            <h2 className="font-serif text-4xl text-white leading-tight mb-6 [text-shadow:0_2px_10px_rgba(15,46,57,0.6)]">
+            <h2 className="font-serif text-4xl text-white leading-tight mb-4 [text-shadow:0_2px_10px_rgba(15,46,57,0.6)]">
               Results you can measure
             </h2>
             <DiamondOrnament className="w-[70%] max-w-xs [&_*]:!stroke-white [&_*]:!fill-white" />
@@ -122,7 +122,7 @@ export default function Home() {
 
           {/* Hero stat */}
           <div className="w-full">
-            <div className="font-serif font-bold text-white text-7xl leading-none mb-3 [text-shadow:0_2px_14px_rgba(15,46,57,0.7)]">
+            <div className="font-serif font-bold text-white text-6xl leading-none mb-2 [text-shadow:0_2px_14px_rgba(15,46,57,0.7)]">
               <CountUp end={18} prefix="$" suffix="M+" />
             </div>
             <p className="font-serif text-white/90 text-sm max-w-xs mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
@@ -131,9 +131,9 @@ export default function Home() {
           </div>
 
           {/* Four secondary stats — 2x2 grid */}
-          <div className="grid grid-cols-2 gap-x-5 gap-y-4 w-full max-w-xs">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-2.5 w-full max-w-xs">
             <div>
-              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 CFRE
               </div>
               <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
@@ -141,7 +141,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={200} suffix="+" />
               </div>
               <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
@@ -149,7 +149,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={9} suffix="+" />
               </div>
               <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
@@ -157,7 +157,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={11} suffix="+" />
               </div>
               <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
