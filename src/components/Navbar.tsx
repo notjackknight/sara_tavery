@@ -1,9 +1,8 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { ChevronDown, Phone } from 'lucide-react';
-import { BOOKING_MODAL_EVENT } from './BookingModal';
 
 type NavLink = {
   to: string;
@@ -15,6 +14,17 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  // Send visitors to the contact section. Smooth-scroll in place on the home
+  // page; otherwise navigate home with the #contact hash.
+  const goToContact = () => {
+    if (pathname === '/') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push('/#contact');
+    }
+  };
 
   const navLinks: NavLink[] = [
     {
@@ -115,7 +125,7 @@ export default function Navbar() {
             })}
             <button
               type="button"
-              onClick={() => window.dispatchEvent(new CustomEvent(BOOKING_MODAL_EVENT))}
+              onClick={goToContact}
               className={ctaClasses}
             >
               <span className="relative z-10">LET&rsquo;S TALK</span>
@@ -207,11 +217,11 @@ export default function Navbar() {
                 type="button"
                 onClick={() => {
                   setIsOpen(false);
-                  window.dispatchEvent(new CustomEvent(BOOKING_MODAL_EVENT));
+                  goToContact();
                 }}
                 className="group relative inline-flex items-center justify-center font-sans font-semibold uppercase tracking-[0.15em] text-sm h-14 px-6 border overflow-hidden isolate bg-brand-green text-white border-brand-green transition-colors duration-300 ease-out hover:text-brand-navy hover:border-white before:pointer-events-none before:absolute before:inset-0 before:bg-white before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-out hover:before:scale-x-100"
               >
-                <span className="relative z-10">BOOK A CALL</span>
+                <span className="relative z-10">START A CONVERSATION</span>
               </button>
               <a
                 href="tel:+13366827447"

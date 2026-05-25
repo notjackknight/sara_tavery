@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Phone, Mail, Linkedin, MapPin, Copy, Check } from 'lucide-react';
 import DiamondOrnament from '@/components/DiamondOrnament';
 import CornerBrackets from '@/components/CornerBrackets';
-import Button from '@/components/Button';
 
 type Method = {
   Icon: typeof Phone;
@@ -100,13 +99,13 @@ export default function Footer() {
                 Let&rsquo;s start a<br />conversation.
               </h2>
               <DiamondOrnament className="lg:mx-0 mb-6 lg:mb-8 max-w-sm" />
-              <p className="hidden lg:block font-serif text-base lg:text-lg text-brand-navy/85 leading-relaxed mb-8 max-w-xl lg:mx-0 mx-auto">
-                Whether you&rsquo;re planning a year-end appeal, preparing for a capital campaign, or rethinking your donor communications, I&rsquo;d love to hear about your work. Reach out and I&rsquo;ll be in touch shortly.
-              </p>
-              <div className="hidden lg:block">
-                <Button to="#" className="!py-4 !px-10">
-                  Schedule a Consultation
-                </Button>
+              <div className="hidden lg:block space-y-5 mb-8 max-w-xl lg:mx-0 mx-auto">
+                <p className="font-serif text-base lg:text-lg text-brand-navy/85 leading-relaxed">
+                  Ready for communications that work harder for your mission? Need senior fundraising support without expanding your staff? I&rsquo;d love to hear from you.
+                </p>
+                <p className="font-serif text-base lg:text-lg text-brand-navy/85 leading-relaxed">
+                  I&rsquo;m based in Winston-Salem, North Carolina, but my work isn&rsquo;t limited by geography. Whether your organization is local, regional, or farther afield, I can help you communicate your impact with clarity, heart, and purpose &mdash; because good stories and strong communications travel well.
+                </p>
               </div>
               <div className="flex items-center gap-2 mt-4 lg:mt-8 justify-center lg:justify-start text-brand-navy/60">
                 <MapPin className="w-4 h-4 flex-shrink-0" strokeWidth={1.5} />

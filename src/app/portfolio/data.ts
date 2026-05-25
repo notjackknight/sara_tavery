@@ -17,19 +17,19 @@ export interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   {
     slug: 'newsletter-sample',
-    title: 'Vision: A Thanksgiving\nStory of Recovery',
+    title: 'A Story\nof Recovery',
     category: 'Newsletter',
     clientDescriptor: 'Winston-Salem Rescue Mission',
     year: '2025',
-    context: 'I wrote the September edition of Vision, the Mission\'s quarterly donor newsletter, to open their fall giving season. It goes to longtime supporters across the Triad who already believe in the work and want to see how their giving is changing real lives in their community.',
-    challenge: 'The fall issue had to carry the Thanksgiving meal appeal at $3.99 per meal while staying honest about what a meal really represents at the Mission. A plate of food is the easy part. The harder story is the 90-day Life Builders program behind it, and I needed donors to feel that connection without losing the warmth of the holiday moment.',
-    approach: 'I built the issue around Victor, a graduate of the 90-day program who lost his sister, his home, and very nearly his life before arriving at the Mission. I let him speak in his own words wherever I could, kept the writing plain, and held the Gospel-centered framing the Mission lives by without letting it tip into anything preachy. The Executive Director\'s letter ties the meal to the deeper work of restoration, so the $3.99 ask reads as the first step in a longer story rather than the whole story.',
+    context: 'I wrote the cover article for the September edition of Vision, the Mission\'s donor newsletter produced by Masterworks. The newsletter goes to donors across the Triad who already believe in the work and want to see how their giving is changing real lives in their community.',
+    challenge: 'The cover article needed to help donors understand the deeper impact behind their support — not just meals served, but the life-changing work happening through the Mission\'s addiction recovery program. The challenge was to honor Victor\'s story with dignity, connect it clearly to the Mission\'s Gospel-centered purpose, and write in a way that would strengthen donor trust and engagement.',
+    approach: 'During the Mission\'s transition to a new direct marketing partner, I stepped in to fill a critical content gap for the newsletter. I interviewed Victor, developed the cover story, and provided direction for staff photography so his story could be told with clarity and dignity. The final article was refined through collaborative editing with Masterworks, with my final review and approval before publication. I let Victor speak in his own words wherever I could, took meticulous notes, and shaped the article in a way that was easy to read while preserving the Gospel-centered framing the Mission lives by.',
     coverImage: '/portfolio/newsletter-cover.png',
     pdf: '/portfolio/newsletter-sample.pdf'
   },
   {
     slug: 'direct-mail-appeal',
-    title: 'A Day at the Ballpark:\nTrellis Fall Appeal',
+    title: 'A Day at the Ballpark:\nFall Appeal',
     category: 'Direct Mail',
     clientDescriptor: 'Trellis Supportive Care',
     year: '2019',
@@ -45,8 +45,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Grant Proposal',
     clientDescriptor: 'Mountain Valley Hospice',
     year: '2022',
-    context: 'I wrote this proposal to The Cannon Charitable Interests, a returning funder of Mountain Valley Hospice & Palliative Care, where I served as Senior Director of Philanthropy. The ask was $91,523 toward a $122,030 capital purchase: a second medical transport vehicle to serve hospice patients across the 18 rural counties we covered in North Carolina and Virginia.',
-    challenge: 'Capital requests are often the hardest grants to write because the object of the funding is a piece of equipment rather than a person. The case had to make a vehicle feel like care, and it had to do that for a sophisticated funder reading dozens of applications. Supply chain delays on the chassis order added a second layer of difficulty, since I needed to be transparent about timing without letting uncertainty undercut the urgency of the need.',
+    context: 'I wrote this fully funded proposal to The Cannon Charitable Interests on behalf of Mountain Valley Hospice & Palliative Care. The request was for $91,523 toward a $122,030 capital purchase: a second medical transport vehicle to serve hospice patients across the 18 rural counties covered in North Carolina and Virginia.',
+    challenge: 'The case had to make a vehicle feel like care, and it had to do that for a sophisticated funder reading dozens of applications. Supply chain delays on the chassis order added a second layer of difficulty, since I needed to be transparent about timing without letting uncertainty undercut the urgency of the need.',
     approach: 'I led with the patient experience. Long rides through rural and mountainous terrain are anxious by nature for a frail hospice patient, and an outside transport service does not always arrive on time. From there I built the financial case using three months of our actual transport data, showing both the savings the existing vehicle had already generated and the outside costs a second vehicle would eliminate. I treated the supply chain risk honestly, named our backup funding plan, and closed by tying the request to the mission language the funder already knew us by.',
     coverImage: '/portfolio/grant-one-cover.png',
     pdf: '/portfolio/grant-proposal-one.pdf'
@@ -58,8 +58,8 @@ export const portfolioItems: PortfolioItem[] = [
     clientDescriptor: 'Winston-Salem Rescue Mission',
     year: '2026',
     context: 'I wrote this application to Forsyth County\'s Behavioral Health Program for FY 2026/27 in my role as Director of Development at the Winston-Salem Rescue Mission. The $60,000 request would fund a full-time, licensed mental health counselor inside our residential addiction recovery programs for men, a clinical role the Mission had never carried on staff before.',
-    challenge: 'Government funders read these applications against a rubric, and the rubric rewards precision over warmth. I had to make the case that hiring one clinician would meaningfully change patient outcomes inside a faith-based recovery program, while documenting evidence-based practices, sustainability without Medicaid reimbursement, and measurable performance targets at the level a County board expects.',
-    approach: 'I framed the role as an expansion of clinical capacity rather than a new program, which kept the proposal aligned with the priority area for psychological and substance use evaluations and assessments. The need section grounded co-occurring mental illness in national prevalence data and tied it directly to the men we serve. I named the specific evidence-based practices the counselor would use, set quantitative and qualitative targets the County could verify, and explained how philanthropic support would sustain the position beyond the grant year so the County\'s investment would not stand alone.',
+    challenge: 'I had to make the case that hiring one full-time licensed mental health counselor would meaningfully change recovery client outcomes inside a faith-based recovery program, while documenting evidence-based practices, sustainability without government or private insurance reimbursement, and measurable performance targets at the level a County board expects.',
+    approach: 'I framed the role as an expansion of clinical capacity rather than a new program, which kept the proposal aligned with the priority area for psychological and substance use evaluations and assessments. The need section grounded co-occurring mental health disorders in national prevalence data and tied it directly to the men we serve. I named the specific evidence-based practices the counselor would use and set quantitative and qualitative targets the County could verify.',
     coverImage: '/portfolio/grant-two-cover.png',
     pdf: '/portfolio/grant-proposal-two.pdf'
   }

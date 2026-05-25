@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import '../index.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import BookingModal from '@/components/BookingModal';
 import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow flex flex-col">{children}</main>
           <Footer />
-          <BookingModal />
         </div>
       </body>
     </html>

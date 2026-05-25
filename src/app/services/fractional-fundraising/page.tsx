@@ -2,59 +2,61 @@ import Button from '@/components/Button';
 
 const offerings = [
   {
-    title: "Build the fundraising plan",
-    body: "An annual plan with realistic goals, a calendar your team can hold, and the strategies behind each revenue line."
+    title: "Build the Fundraising Plan",
+    body: "An annual or campaign-specific plan with realistic goals, a usable calendar, and clear strategies behind each revenue priority."
   },
   {
-    title: "Lead major donor strategy",
-    body: "Portfolio review, moves management, ask amounts, proposal strategy, and the next right step for every key donor relationship."
+    title: "Lead Major Donor Strategy",
+    body: "Portfolio review, donor segmentation, moves management, ask strategy, proposal direction, and next steps for key donor relationships."
   },
   {
-    title: "Strengthen donor retention",
-    body: "Stewardship plans that keep first-time donors giving and longtime donors feeling known."
+    title: "Strengthen Donor Retention",
+    body: "Stewardship plans and donor communications that help first-time donors stay connected and longtime donors feel known and valued."
   },
   {
-    title: "Run grant and sponsorship strategy",
-    body: "A grants calendar, a prospect pipeline, and a clear plan for which funders to pursue, in what order, and why."
+    title: "Guide Grant and Sponsorship Strategy",
+    body: "A grants calendar, prospect pipeline, sponsorship strategy, and clear plan for which opportunities to pursue, when, and why."
   },
   {
-    title: "Coach the board",
-    body: "Practical fundraising coaching for boards that want to help but aren&rsquo;t sure how. Talking points, talking practice, and the structure to make it stick."
+    title: "Support Board Fundraising",
+    body: "Practical coaching, talking points, and structure for board members who want to help but need clearer direction."
   },
   {
-    title: "Support the staff you have",
-    body: "If you have a development associate or generalist on staff, I work above them, not around them. Most leave the engagement stronger than they came in."
+    title: "Strengthen the Team You Have",
+    body: "If you have a development coordinator on staff, I provide senior-level direction that helps the work become more focused, organized, and effective."
   }
 ];
 
 const benefits = [
   {
-    title: "A senior leader without the senior salary.",
-    body: "The strategic judgment of a Director of Development or VP of Philanthropy, at a cost that fits a mid-sized nonprofit budget."
+    title: "Strategy and implementation in one place.",
+    body: "Move beyond advice alone. I help clarify the fundraising plan and support the communications, donor engagement, and follow-through needed to move it forward."
   },
   {
-    title: "No ramp-up, no hiring risk.",
-    body: "I come in knowing how nonprofit fundraising actually works, especially in hospice, recovery, and human services. There&rsquo;s no first ninety days of figuring out the role."
+    title: "Senior development perspective without adding a full-time position.",
+    body: "You gain experienced fundraising leadership while keeping the structure realistic for your current budget, staff, and stage of growth."
   },
   {
-    title: "Flexible by month and by season.",
-    body: "Heavier hours around year-end, campaigns, and grant cycles. Lighter retainers in quieter months. The engagement flexes with your calendar."
+    title: "Support for an overextended executive director.",
+    body: "When fundraising has outgrown what the executive director can carry alone, I provide experienced support that helps lighten the load and create a more sustainable path forward."
   },
   {
-    title: "Accountability to outcomes.",
-    body: "We agree on what the engagement is meant to produce, and we measure against it. Stronger appeals, healthier retention, more confident asks, more dollars raised."
+    title: "Guidance during a leadership gap or transition.",
+    body: "Maintain momentum when a development role is vacant, newly created, or in transition, with support from someone who can step in quickly and understand the work."
   }
 ];
 
 const audience = [
-  "Executive directors carrying development on top of running the organization.",
-  "Boards that need senior development leadership but aren’t ready to hire full time.",
-  "Nonprofits in a season of growth, transition, or a campaign that has to land."
+  "Executive directors carrying development leadership on top of running the organization.",
+  "Boards that know fundraising needs more structure but are not ready to hire a full-time senior development leader.",
+  "Small or mid-sized nonprofits preparing for growth, transition, a campaign, or a more intentional donor strategy.",
+  "Organizations with a development staff member who needs senior-level guidance, structure, and support.",
+  "Nonprofits that need experienced fundraising leadership without building a full development department."
 ];
 
 const ataglance = [
   { label: "Service", value: "Fractional senior development leadership." },
-  { label: "Engagements", value: "Monthly retainer, scaled to your calendar." },
+  { label: "Engagements", value: "Retainer-based support for defined-term engagements." },
   { label: "Best for", value: "Organizations between a stretched ED and a full-time hire." },
   { label: "Role", value: "Part of your team, at the level you&rsquo;re ready for." }
 ];
@@ -76,7 +78,7 @@ export default function FractionalFundraising() {
             Services &nbsp;/&nbsp; Fractional Fundraising
           </p>
           <h1 className="font-serif text-3xl text-white leading-[1.1] tracking-[-0.01em] mb-4 [text-shadow:0_2px_10px_rgba(15,46,57,0.5)]">
-            Senior leadership,<br />when you need it.
+            Senior fundraising leadership for the season you&rsquo;re in.
           </h1>
           <p className="font-serif text-sm text-white/90 leading-relaxed italic max-w-md mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.5)]">
             The judgment of a Director of Development or VP of Philanthropy, on a monthly retainer scaled to your calendar and your budget.
@@ -91,7 +93,7 @@ export default function FractionalFundraising() {
             Services &nbsp;/&nbsp; Fractional Fundraising
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] text-brand-navy leading-[1.02] tracking-[-0.01em] max-w-5xl mb-8">
-            Senior development leadership,<br className="hidden lg:block" /> on the days you actually need it.
+            Senior fundraising leadership<br className="hidden lg:block" /> for the season you&rsquo;re in.
           </h1>
           <p className="font-serif text-lg md:text-xl text-brand-navy/75 leading-relaxed max-w-2xl italic">
             The judgment of a Director of Development or VP of Philanthropy, on a monthly retainer scaled to your calendar and your budget.
@@ -113,15 +115,15 @@ export default function FractionalFundraising() {
 
               {/* Opening */}
               <p className="font-serif text-xl md:text-2xl text-brand-navy leading-[1.55] mb-6 first-letter:font-serif first-letter:text-5xl md:first-letter:text-6xl first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:leading-none first-letter:text-brand-navy">
-                The development work has outgrown what the executive director can carry, but the budget can&rsquo;t justify a senior hire at full salary.
+                The organization&rsquo;s development needs may have increased beyond the executive director&rsquo;s available time and capacity, the chief philanthropy officer may have stepped away, or the budget simply can&rsquo;t justify a senior hire at full salary.
               </p>
 
               <p className="font-serif text-lg md:text-xl text-brand-navy/85 leading-[1.7] mb-6">
-                Fractional fundraising solves that. On a monthly retainer, I become part of your team at the level your organization is ready for. Strategy gets set. Plans get written. Donors get moved. And your executive director gets to lead the organization again instead of running the appeal alone.
+                That is where fractional fundraising can help. I work with your organization through a retainer-based engagement to bring clarity, structure, and experienced judgment to the fundraising work already in motion. Together, we strengthen the plan, sharpen donor communication, identify the next right steps, and build more confidence around the revenue priorities that matter most.
               </p>
 
               <p className="font-serif text-lg md:text-xl text-brand-navy/85 leading-[1.7] mb-14 md:mb-16">
-                The model isn&rsquo;t new, but the version that works depends entirely on who&rsquo;s in the seat. Nine years of senior development leadership, a CFRE credential, and time inside hospice, recovery, and human-services nonprofits are what I bring to it.
+                This work is not simply about adding more activity to the calendar. It is about helping your organization focus its time, relationships, and message so fundraising becomes more intentional and less reactive.
               </p>
 
               {/* Inline thumbnail */}
@@ -178,10 +180,10 @@ export default function FractionalFundraising() {
                 </div>
 
                 <h2 className="md:hidden font-serif text-3xl text-brand-navy leading-tight mb-10 max-w-xl">
-                  Why this model works.
+                  Why organizations choose this.
                 </h2>
                 <h2 className="hidden md:block font-serif text-3xl md:text-4xl text-brand-navy leading-tight mb-10 max-w-xl">
-                  Four reasons organizations choose to work this way.
+                  Why organizations choose fractional fundraising.
                 </h2>
 
                 <div className="space-y-10">
@@ -251,8 +253,8 @@ export default function FractionalFundraising() {
                     A short conversation is usually enough to know if fractional support is the right move.
                   </p>
 
-                  <Button to="#book" className="w-full">
-                    BOOK A CALL
+                  <Button to="#contact" className="w-full">
+                    START A CONVERSATION
                   </Button>
                 </div>
               </div>
@@ -268,8 +270,9 @@ export default function FractionalFundraising() {
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-white/60 mb-5">
             A Final Thought
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
-            The right fit makes itself obvious.
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight text-balance">
+            Strong fundraising is not guesswork.{' '}
+            <span className="lg:whitespace-nowrap">It is purpose, planned.</span>
           </h2>
         </div>
       </section>

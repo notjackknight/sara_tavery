@@ -102,10 +102,10 @@ export default function TermsOfUse() {
                 Third-party links and tools
               </h2>
               <p>
-                The site may link to or embed third-party tools &mdash; for example, the Google
-                scheduling tool used to book consultations, or external profiles like LinkedIn.
-                Those tools are operated by other companies and have their own terms and
-                privacy policies. We&rsquo;re not responsible for their content or practices.
+                The site may link to or embed third-party tools &mdash; for example, external
+                profiles like LinkedIn. Those tools are operated by other companies and have
+                their own terms and privacy policies. We&rsquo;re not responsible for their
+                content or practices.
               </p>
             </section>
 

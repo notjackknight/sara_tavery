@@ -7,7 +7,7 @@ import CountUp from '@/components/CountUp';
 import MobileFixedBgImage from '@/components/MobileFixedBgImage';
 import Link from 'next/link';
 import { Award, GraduationCap, Users, ArrowRight } from 'lucide-react';
-import { TrophyIcon, CheckBadgeIcon, AdjustmentsHorizontalIcon, ArrowTrendingUpIcon } from '@heroicons/react/24/outline';
+import { TrophyIcon, CheckBadgeIcon, AdjustmentsHorizontalIcon, HeartIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
@@ -46,8 +46,8 @@ export default function Home() {
               <Button to="/#services" className="!bg-white !text-brand-navy !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
                 VIEW SERVICES
               </Button>
-              <Button variant="outline" to="#book" className="!bg-transparent !text-white !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
-                SCHEDULE A CONSULTATION
+              <Button variant="outline" to="#contact" className="!bg-transparent !text-white !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
+                START A CONVERSATION
               </Button>
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function Home() {
                 <Button to="/#services" className="!bg-white !text-brand-navy !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
                   VIEW SERVICES
                 </Button>
-                <Button variant="outline" to="#book" className="!bg-transparent !text-white !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
-                  SCHEDULE A CONSULTATION
+                <Button variant="outline" to="#contact" className="!bg-transparent !text-white !border-white hover:!bg-brand-green hover:!text-white hover:!border-brand-green">
+                  START A CONVERSATION
                 </Button>
               </div>
             </div>
@@ -123,37 +123,45 @@ export default function Home() {
           {/* Hero stat */}
           <div className="w-full">
             <div className="font-serif font-bold text-white text-7xl leading-none mb-3 [text-shadow:0_2px_14px_rgba(15,46,57,0.7)]">
-              <CountUp end={50} prefix="$" suffix="M+" />
+              <CountUp end={18} prefix="$" suffix="M+" />
             </div>
-            <p className="font-serif text-white/90 text-base max-w-xs mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
-              Raised for nonprofit clients and employers
+            <p className="font-serif text-white/90 text-sm max-w-xs mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+              Raised through nonprofit fundraising roles and client work
             </p>
           </div>
 
-          {/* Three smaller stats */}
-          <div className="grid grid-cols-3 gap-4 w-full">
+          {/* Four secondary stats — 2x2 grid */}
+          <div className="grid grid-cols-2 gap-x-5 gap-y-4 w-full max-w-xs">
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
-                <CountUp end={200} suffix="+" />
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+                CFRE
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
-                Grants, appeals, and proposals written
+              <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+                Certified Fund Raising Executive
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+                <CountUp end={200} suffix="+" />
+              </div>
+              <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+                Grants, appeals, proposals, and donor communications
+              </p>
+            </div>
+            <div>
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
                 <CountUp end={9} suffix="+" />
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+              <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
                 Years leading nonprofit development teams
               </p>
             </div>
             <div>
-              <div className="font-serif font-bold text-white text-4xl leading-none mb-2 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
-                CFRE
+              <div className="font-serif font-bold text-white text-3xl leading-none mb-1.5 [text-shadow:0_2px_10px_rgba(15,46,57,0.7)]">
+                <CountUp end={11} suffix="+" />
               </div>
-              <p className="font-serif text-white/85 text-xs leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
-                Certified Fund Raising Executive
+              <p className="font-serif text-white/85 text-[11px] leading-snug [text-shadow:0_1px_6px_rgba(15,46,57,0.6)]">
+                Years of prior marketing and advertising
               </p>
             </div>
           </div>
@@ -180,21 +188,29 @@ export default function Home() {
               {/* Hero stat */}
               <div>
                 <div className="font-serif font-bold text-brand-navy text-7xl md:text-8xl lg:text-[9rem] leading-none mb-3">
-                  <CountUp end={50} prefix="$" suffix="M+" />
+                  <CountUp end={18} prefix="$" suffix="M+" />
                 </div>
                 <p className="font-serif text-brand-navy/70 text-base lg:text-lg">
-                  Raised for nonprofit clients and employers
+                  Raised through nonprofit fundraising roles and client work
                 </p>
               </div>
 
-              {/* Three smaller stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-8">
+              {/* Four secondary stats — 2x2 grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-10 lg:gap-y-10">
+                <div>
+                  <div className="font-serif font-bold text-brand-navy text-5xl md:text-6xl leading-none mb-2">
+                    CFRE
+                  </div>
+                  <p className="font-serif text-brand-navy/70 text-sm lg:text-base">
+                    Certified Fund Raising Executive
+                  </p>
+                </div>
                 <div>
                   <div className="font-serif font-bold text-brand-navy text-5xl md:text-6xl leading-none mb-2">
                     <CountUp end={200} suffix="+" />
                   </div>
                   <p className="font-serif text-brand-navy/70 text-sm lg:text-base">
-                    Grants, appeals, and proposals written
+                    Grants, appeals, proposals, and donor communications written
                   </p>
                 </div>
                 <div>
@@ -207,10 +223,10 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="font-serif font-bold text-brand-navy text-5xl md:text-6xl leading-none mb-2">
-                    CFRE
+                    <CountUp end={11} suffix="+" />
                   </div>
                   <p className="font-serif text-brand-navy/70 text-sm lg:text-base">
-                    Certified Fund Raising Executive
+                    Years of prior marketing and advertising experience
                   </p>
                 </div>
               </div>
@@ -254,22 +270,22 @@ export default function Home() {
               {
                 Icon: TrophyIcon,
                 title: "Senior expertise",
-                body: "You get the judgment of a Director of Development or VP of Philanthropy on a project or monthly basis, without the cost of a full-time hire."
+                body: "You get senior-level development leadership, seasoned perspective, and practical expertise without the cost or commitment of a full-time hire. I can step in, find my footing quickly, and help you communicate impact, inspire support, and grow mission revenue."
               },
               {
                 Icon: CheckBadgeIcon,
                 title: "No learning curve",
-                body: "After years inside hospice, recovery, and human services nonprofits, I know how these organizations actually run. I can step in, find my footing quickly, and start moving the work forward."
+                body: "I’ve spent years inside hospice, recovery, and human services nonprofits, so I understand how these organizations work and what their donors respond to. That familiarity means less time spent getting oriented and more time spent moving the work forward."
               },
               {
                 Icon: AdjustmentsHorizontalIcon,
                 title: "Flexible by design",
-                body: "Scale up around year-end, campaigns, and grant deadlines. Ease off in quieter months. You pay for the work you need, when you need it."
+                body: "Get the support you need when you need it — for donor communications, grant writing, campaign messaging, and the everyday development work that helps move revenue forward. Scale up during busy seasons. Ease off in quieter months."
               },
               {
-                Icon: ArrowTrendingUpIcon,
-                title: "Outcome-based",
-                body: "Every engagement is built around what it produces: clearer appeals, stronger donor relationships, and giving that grows over time. That is the standard I hold myself to."
+                Icon: HeartIcon,
+                title: "A Partner in Purpose",
+                body: "The right story and strategic messaging can make your impact clear, deepen connection, and help support grow over time. I bring that approach to organizations helping people and communities flourish."
               }
             ];
             return (
@@ -342,7 +358,7 @@ export default function Home() {
         <div className="md:hidden sticky top-24 z-20 mb-12 mx-auto w-fit max-w-[90%] bg-white/40 backdrop-blur-md shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)] border border-white/40">
           <div className="text-center px-5 py-4">
             <h2 className="font-serif text-[2rem] text-brand-navy leading-tight whitespace-nowrap">
-              How We Partner
+              Working Together
             </h2>
           </div>
         </div>
@@ -352,10 +368,10 @@ export default function Home() {
             {/* Left: title + image */}
             <div className="text-center lg:text-left">
               <p className="hidden md:block font-sans text-xs tracking-[0.25em] uppercase text-brand-green mb-4 text-center">
-                Our Approach
+                My Approach
               </p>
               <h2 className="hidden md:block font-serif text-4xl md:text-5xl lg:text-6xl text-brand-navy mb-4 leading-tight text-center">
-                How We Partner
+                Working Together
               </h2>
               <DiamondOrnament className="hidden md:block mb-8 lg:mx-0" />
               <img
@@ -365,22 +381,24 @@ export default function Home() {
               />
             </div>
 
-            {/* Right: vertical stack of engagement types */}
+            {/* Right: the two service engagement types */}
             <div className="flex flex-col divide-y divide-brand-green/40 max-w-[44rem] mx-auto lg:mx-0">
               {[
                 {
-                  title: "Project-Based Engagements",
-                  body: "Well suited to organizations with a defined need and a real deadline. A year-end appeal, a case for support, a grant proposal, a campaign launch. We agree on the scope, and I deliver."
+                  title: "Writing Services",
+                  paras: [
+                    "For organizations that need dependable communications support beyond a single project, I provide donor communications, grant writing, campaign messaging, cases for support, and the strategic messaging that keeps fundraising moving.",
+                    "Together, we discuss your goals, priorities, and timeline. From there, I gather the information needed to understand your organization, audience, and current messaging. I then develop clear, thoughtful content that reflects your voice and supports your fundraising or communications goals."
+                  ]
                 },
                 {
-                  title: "Fractional Fundraising Support",
-                  body: "For organizations that need senior development expertise on a steady basis but aren’t ready to bring on a full-time leader. On a monthly retainer, I work alongside your team as part of it."
-                },
-                {
-                  title: "Strategic Advisory",
-                  body: "For executive directors and boards who want senior counsel without handing off execution. We meet regularly to think through strategy and sharpen the decisions that shape messaging and donor engagement."
+                  title: "Fractional Fundraising",
+                  paras: [
+                    "For organizations that need senior development expertise but are not looking to add a full-time development leadership role, I work alongside your team to strengthen communications, fundraising strategy, donor engagement, and revenue growth.",
+                    "I start by asking you about your current needs, goals, and opportunities. From there, I provide steady support, guidance, and written materials as needed to help move your priorities forward. Throughout the engagement, we review progress and adjust the focus as your needs evolve."
+                  ]
                 }
-              ].map(({ title, body }, i) => (
+              ].map(({ title, paras }, i) => (
                 <div
                   key={i}
                   className="py-6 lg:py-7 first:pt-0 last:pb-0"
@@ -388,9 +406,11 @@ export default function Home() {
                   <h3 className="font-serif text-xl lg:text-2xl font-bold text-brand-navy leading-snug mb-2 text-center">
                     {title}
                   </h3>
-                  <p className="font-serif text-brand-navy/85 leading-relaxed text-base lg:text-lg">
-                    {body}
-                  </p>
+                  {paras.map((para, j) => (
+                    <p key={j} className="font-serif text-brand-navy/85 leading-relaxed text-base lg:text-lg mt-3 first:mt-0">
+                      {para}
+                    </p>
+                  ))}
                 </div>
               ))}
             </div>
@@ -515,7 +535,7 @@ export default function Home() {
       </div>
 
       {/* About - Bio */}
-      <section id="about" className="relative bg-brand-cream py-12 md:py-14 px-4 md:overflow-hidden">
+      <section id="about" className="relative bg-brand-cream py-12 md:py-14 px-4">
         {/* Mobile-only corner brackets (top-left + top-right) */}
         <div aria-hidden="true" className="pointer-events-none absolute top-6 left-6 lg:hidden">
           <div className="w-10 h-px bg-brand-green/40" />
@@ -541,26 +561,34 @@ export default function Home() {
           </p>
           <h2 className="hidden md:block font-serif text-4xl md:text-5xl lg:text-6xl text-center text-brand-navy mb-10">About Me</h2>
 
-          <div className="flex flex-col md:flex-row gap-8 lg:gap-14 items-center md:items-start">
+          <div className="flex flex-col md:flex-row gap-8 lg:gap-14 items-center md:items-stretch">
             <div className="w-full md:w-[34%]">
-              <div className="aspect-[3/4] bg-neutral-200 w-full overflow-hidden border border-brand-navy/10 ring-1 ring-inset ring-white/15 shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)]">
-                <img
-                  src="/About.png"
-                  alt="Sara Tavery Portrait"
-                  className="w-full h-full object-cover"
-                />
+              <div className="md:sticky md:top-28">
+                <div className="aspect-[3/4] bg-neutral-200 w-full overflow-hidden border border-brand-navy/10 ring-1 ring-inset ring-white/15 shadow-[0_2px_8px_rgba(15,46,57,0.08),0_14px_36px_-10px_rgba(15,46,57,0.22)]">
+                  <img
+                    src="/About.png"
+                    alt="Sara Tavery Portrait"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
 
             <div className="w-full md:w-[66%] flex flex-col space-y-4">
               <p className="font-serif text-base lg:text-lg text-brand-navy leading-relaxed">
-                I&rsquo;m a philanthropy communications consultant with more than nine years of experience in nonprofit development, donor engagement, and fundraising strategy, built on an earlier background in marketing communications and financial services.
+                I&rsquo;m a philanthropy communications consultant with more than nine years of experience in nonprofit development, donor engagement, grant writing, and fundraising strategy, built on more than 11 years of prior experience in marketing, advertising, and communications.
               </p>
               <p className="font-serif text-base lg:text-lg text-brand-navy leading-relaxed">
-                I&rsquo;ve held senior development leadership roles within nonprofit residential recovery and hospice organizations, serving as Director of Development, Vice President of Philanthropy, and Director of Annual Giving.
+                My work combines donor-centered messaging, grant strategy, direct mail fundraising, impact storytelling, and practical development leadership experience. I&rsquo;ve held senior development roles within nonprofit residential recovery and hospice organizations, including Director of Development, Vice President of Philanthropy, and Director of Annual Giving.
               </p>
               <p className="font-serif text-base lg:text-lg text-brand-navy leading-relaxed">
-                I&rsquo;m a graduate of Wake Forest University with a degree in psychology, a Certified Fund Raising Executive (CFRE), and an active member of the Association of Fundraising Professionals. I live in Winston-Salem, North Carolina.
+                As Director of Development at the Winston-Salem Rescue Mission, I increased revenue from individual donors making single gifts of $10,000 or more by 40% year over year through strategic major donor cultivation. My experience also includes writing successful grant proposals, developing direct mail fundraising appeals, and interviewing program participants to turn their experiences into compelling stories of impact.
+              </p>
+              <p className="font-serif text-base lg:text-lg text-brand-navy leading-relaxed">
+                I&rsquo;m especially skilled at listening deeply, finding the heart of a story, and translating it into messaging that moves donors to respond. I&rsquo;m your go-to partner for helping nonprofits communicate impact, inspire support, and grow mission revenue.
+              </p>
+              <p className="font-serif text-base lg:text-lg text-brand-navy leading-relaxed">
+                Based in Winston-Salem, North Carolina, I&rsquo;m a graduate of Wake Forest University with a degree in psychology, a Certified Fund Raising Executive (CFRE), and an active member of the Association of Fundraising Professionals.
               </p>
 
               {/* Credentials Strip */}
@@ -595,8 +623,8 @@ export default function Home() {
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-white mb-10 whitespace-normal xl:whitespace-nowrap">
             Senior fundraising expertise, on the terms that fit your mission.
           </h2>
-          <Button variant="secondary" to="#book">
-            SCHEDULE A CONSULTATION
+          <Button variant="secondary" to="#contact">
+            START A CONVERSATION
           </Button>
         </div>
       </section>

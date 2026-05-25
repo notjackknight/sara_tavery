@@ -2,61 +2,63 @@ import Button from '@/components/Button';
 
 const offerings = [
   {
-    title: "Grant proposals and research",
-    body: "Foundation and corporate proposals, LOIs, and prospect research that surface the right funders for your mission."
+    title: "Story-Based Appeals",
+    body: "Direct mail and digital appeals built around clear messaging, meaningful stories, specific asks, and language that invites response."
   },
   {
-    title: "Cases for support",
-    body: "The foundational document your team uses across major gifts, board recruitment, and campaigns. Written once, used everywhere."
+    title: "Grant Proposals",
+    body: "Foundation and corporate proposals, letters of interest/inquiry (LOIs), and grant research that connect your programs, outcomes, community needs, and funding priorities."
   },
   {
-    title: "Annual and year-end appeals",
-    body: "Direct mail and digital appeals built around a specific donor decision, with clear asks and language that earns a response."
+    title: "Cases for Support",
+    body: "Foundational messaging your team can use across major gifts, board engagement, campaigns, fundholder conversations, and donor communications."
   },
   {
-    title: "Major gift proposals",
-    body: "Tailored proposals for principal and major donors, written to support a specific ask at a specific level."
+    title: "Transformational Gift Proposals",
+    body: "Tailored proposals for major and principal donors, often shaped around a specific story, project, initiative, or giving opportunity."
   },
   {
-    title: "Donor communications",
-    body: "Thank-you letters, impact reports, newsletters, and stewardship touches that keep donors close between asks."
+    title: "Donor Communications",
+    body: "Thank-you letters, annual reports, newsletters, stewardship messages, and other communications that showcase your organization&rsquo;s impact."
   },
   {
-    title: "Campaign messaging",
-    body: "Core narrative, key messages, and donor-facing language for capital, endowment, and comprehensive campaigns."
+    title: "Campaign Messaging",
+    body: "Core narrative, key messages, and donor-facing language for capital, endowment, annual, and comprehensive campaigns."
   }
 ];
 
 const benefits = [
   {
-    title: "Writing that sounds like your organization.",
-    body: "I spend the time up front to understand how your leadership talks, how your donors think, and how your mission lives day to day. The copy reads like someone on staff wrote it on their best day."
+    title: "Storytelling with care and purpose.",
+    body: "I&rsquo;m experienced at interviewing clients, recipients, program participants, donors, staff, grantees, and community partners to uncover stories of impact. I approach this work with care, respect, and sensitivity, looking for honest details that convey dignity and meaning."
   },
   {
-    title: "Senior judgment, not just words on a page.",
-    body: "I&rsquo;ve held Director of Development and Vice President of Philanthropy roles. When something in the strategy is off, I&rsquo;ll say so before I start writing, because a strong sentence can&rsquo;t fix a weak ask."
+    title: "Fundraising strategy behind the writing.",
+    body: "If something about the audience, ask, or message feels unclear, I&rsquo;ll help identify that before drafting begins &mdash; because strong writing starts with a strong direction."
   },
   {
-    title: "Real deadlines, kept.",
-    body: "Grant cycles and year-end calendars don&rsquo;t move. We agree on dates at the start, and I deliver on them."
+    title: "Flexible stories that work across formats.",
+    body: "A well-developed story can strengthen more than one piece of communication. The same core narrative may support an appeal, grant application, donor proposal, newsletter, impact report, fundholder update, or campaign message when adapted thoughtfully for each audience."
   },
   {
-    title: "Finished work, ready to send.",
-    body: "Drafts come polished, formatted, and revised through your feedback. Your team should be approving, not rewriting."
+    title: "Finished work your team can use.",
+    body: "Drafts are polished, organized, and revised through your feedback."
   }
 ];
 
 const audience = [
-  "Executive directors who need a specific piece written well and on time.",
-  "Small shops where the writing is the part that keeps getting pushed.",
-  "Teams preparing for a campaign or year-end push that has to land."
+  "Executive directors who need important communications written well and on time.",
+  "Small development teams where writing and storytelling keep getting pushed behind urgent daily demands.",
+  "Organizations preparing for a campaign, grant deadline, year-end appeal, or donor communication that needs to land well.",
+  "Community foundations and philanthropic organizations that need clear, story-driven communications for donors, fundholders, grantees, or community partners.",
+  "Nonprofits with powerful stories but limited time or capacity to shape them into effective fundraising copy."
 ];
 
 const ataglance = [
-  { label: "Service", value: "Fundraising copywriting and editorial direction." },
-  { label: "Engagements", value: "Project-based, single deliverable or bundled." },
-  { label: "Best for", value: "Development teams that need senior writing on a deadline." },
-  { label: "Voice", value: "Yours. Refined, audited for tone, and ready to send." }
+  { label: "Service", value: "Fundraising writing, storytelling, and editorial direction." },
+  { label: "Engagements", value: "Retainer-based support for defined-term engagements." },
+  { label: "Best for", value: "Nonprofit organizations that need experienced writing for donor, funder, or campaign communications." },
+  { label: "Approach", value: "Story-driven, strategic, ethically written, and ready to use." }
 ];
 
 export default function WritingServices() {
@@ -76,10 +78,10 @@ export default function WritingServices() {
             Services &nbsp;/&nbsp; Writing
           </p>
           <h1 className="font-serif text-3xl text-white leading-[1.1] tracking-[-0.01em] mb-4 [text-shadow:0_2px_10px_rgba(15,46,57,0.5)]">
-            Fundraising copy that sounds like you,<br />and raises more.
+            Fundraising writing rooted in story, strategy, and impact.
           </h1>
           <p className="font-serif text-sm text-white/90 leading-relaxed italic max-w-md mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.5)]">
-            Appeals, proposals, and donor communications written in your voice and built around the response you want.
+            Appeals, proposals, grant applications, and donor communications shaped by clear messaging, ethical storytelling, and the response you want to inspire.
           </p>
         </div>
       </section>
@@ -91,10 +93,10 @@ export default function WritingServices() {
             Services &nbsp;/&nbsp; Writing
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] text-brand-navy leading-[1.02] tracking-[-0.01em] mb-8">
-            Fundraising&nbsp;copy&nbsp;that&nbsp;sounds <span className="lg:whitespace-nowrap">like you, and raises more.</span>
+            Fundraising writing rooted in <span className="lg:whitespace-nowrap">story, strategy, and impact.</span>
           </h1>
           <p className="font-serif text-lg md:text-xl text-brand-navy/75 leading-relaxed max-w-2xl italic">
-            Appeals, proposals, and donor communications written in your voice and built around the response you want.
+            Appeals, proposals, grant applications, and donor communications shaped by clear messaging, ethical storytelling, and the response you want to inspire.
           </p>
         </div>
       </section>
@@ -113,15 +115,15 @@ export default function WritingServices() {
 
               {/* Opening */}
               <p className="font-serif text-xl md:text-2xl text-brand-navy leading-[1.55] mb-6 first-letter:font-serif first-letter:text-5xl md:first-letter:text-6xl first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:leading-none first-letter:text-brand-navy">
-                Most nonprofit teams know what to say. They just don&rsquo;t have the time or the distance from the work to say it well.
+                Nonprofits are close to meaningful stories every day. But capturing those stories well &mdash; and translating them into communications that resonate with donors, funders, and partners, stir emotion, and move them to deepen their support &mdash; takes time, care, and perspective.
               </p>
 
               <p className="font-serif text-lg md:text-xl text-brand-navy/85 leading-[1.7] mb-6">
-                I write the appeals, proposals, and donor communications your team is too stretched to finish, and I do it in a voice that reads like it came from inside your organization. The end product is ready to use, audited for tone, and built around the donor you&rsquo;re actually trying to reach.
+                I help organizations turn program work, donor generosity, community needs, and organizational impact into clear, compelling communications. Through thoughtful interviews with staff, donors, grantees, community partners, clients, recipients, and program participants, I look for the details that reveal impact, dignity, generosity, and meaning without overstatement or exploitation.
               </p>
 
               <p className="font-serif text-lg md:text-xl text-brand-navy/85 leading-[1.7] mb-14 md:mb-16">
-                The writing is the visible part. Underneath it sits nine years of senior development experience, a CFRE credential, and a working knowledge of what actually moves donors in hospice, recovery, and human-services nonprofits.
+                Those stories can be woven into many formats: annual appeals, year-end campaigns, grant applications, cases for support, newsletters, impact reports, campaign materials, and major donor proposals. The goal is not simply to tell a moving story, but to connect the story to your mission, your outcomes, and the opportunity for supporters to make a meaningful difference.
               </p>
 
               {/* Inline thumbnail — magazine spot */}
@@ -143,7 +145,7 @@ export default function WritingServices() {
                 </div>
 
                 <h2 className="font-serif text-3xl md:text-4xl text-brand-navy leading-tight mb-10 max-w-xl">
-                  Where my writing goes.
+                  What I write.
                 </h2>
 
                 <div>
@@ -247,8 +249,8 @@ export default function WritingServices() {
                     Tell me what you&rsquo;re working on<br /> and when it&rsquo;s due.
                   </p>
 
-                  <Button to="#book" className="w-full">
-                    BOOK A CALL
+                  <Button to="#contact" className="w-full">
+                    START A CONVERSATION
                   </Button>
                 </div>
               </div>
@@ -264,8 +266,9 @@ export default function WritingServices() {
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-white/60 mb-5">
             A Final Thought
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
-            Writing this well is hard,<br /> that&rsquo;s the whole point.
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight text-balance">
+            Strategic storytelling is rarely simple.{' '}
+            <span className="lg:whitespace-nowrap">That&rsquo;s why it matters.</span>
           </h2>
         </div>
       </section>

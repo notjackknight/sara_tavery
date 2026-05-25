@@ -55,10 +55,10 @@ export default function Portfolio() {
       <section className="bg-brand-navy py-8 md:py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-white/60 mb-5">
-            Behind the Samples
+            A Final Thought
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
-            Most of the work happens<br /> before a word is written.
+            Strategy first. Story next.<br /> Generosity grows.
           </h2>
         </div>
       </section>

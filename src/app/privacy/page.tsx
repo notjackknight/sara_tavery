@@ -60,12 +60,7 @@ export default function PrivacyPolicy() {
                 <li>
                   <span className="text-brand-navy font-semibold">Contact details</span> &mdash;
                   your name, email address, and (optionally) phone number when you reach out by
-                  email, phone, or through the scheduling tool.
-                </li>
-                <li>
-                  <span className="text-brand-navy font-semibold">Scheduling details</span>
-                  &mdash; the day, time, and any notes you provide when booking a consultation
-                  through Google&rsquo;s scheduling tool.
+                  email or phone.
                 </li>
                 <li>
                   <span className="text-brand-navy font-semibold">Analytics</span> &mdash;
@@ -82,7 +77,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p className="mb-4">Your information is used to:</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Respond to your inquiry and schedule a consultation.</li>
+                <li>Respond to your inquiry and follow up about your work.</li>
                 <li>Send follow-up communications related to work you&rsquo;ve asked about.</li>
                 <li>Understand how the site is being used so it can be improved.</li>
               </ul>
@@ -107,8 +102,7 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <span className="text-brand-navy font-semibold">Google</span> provides the
-                  scheduling tool used to book consultations and the email service used to
-                  correspond with clients.
+                  email service used to correspond with clients.
                 </li>
               </ul>
             </section>
@@ -119,8 +113,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p>
                 This site does not use tracking cookies. Cloudflare may set a small number of
-                technical cookies needed to keep the site running. The scheduling and email tools
-                may set their own cookies when you interact with them directly.
+                technical cookies needed to keep the site running.
               </p>
             </section>
 
