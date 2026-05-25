@@ -28,10 +28,10 @@ export default function Home() {
 
         {/* Navy block: scrolls up over the sticky image */}
         <div className="relative w-full bg-brand-navy z-10">
-          <div className="w-full min-h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between gap-8 px-6 py-8 text-center">
+          <div className="w-full h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between px-6 py-6 text-center">
             {/* Text group */}
             <div className="w-full flex flex-col items-center">
-              <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-5">
+              <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-4">
                 A collaborative process.<br />
                 Meaningful results.
               </h3>
