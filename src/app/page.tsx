@@ -28,10 +28,10 @@ export default function Home() {
 
         {/* Navy block: scrolls up over the sticky image */}
         <div className="relative w-full bg-brand-navy z-10">
-          <div className="w-full h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between px-6 py-6 text-center">
+          <div className="w-full min-h-[calc(50svh-2.5rem)] flex flex-col items-center justify-between gap-8 px-6 py-8 text-center">
             {/* Text group */}
             <div className="w-full flex flex-col items-center">
-              <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-4">
+              <h3 className="font-serif text-[30px] text-white leading-[1.15] whitespace-nowrap tracking-[-0.01em] mb-5">
                 A collaborative process.<br />
                 Meaningful results.
               </h3>
@@ -270,12 +270,12 @@ export default function Home() {
               {
                 Icon: TrophyIcon,
                 title: "Senior expertise",
-                body: "You get senior-level development leadership, seasoned perspective, and practical expertise without the cost or commitment of a full-time hire. I can step in, find my footing quickly, and help you communicate impact, inspire support, and grow mission revenue."
+                body: "You get senior-level development leadership, seasoned perspective, and practical expertise without the cost or commitment of a full-time hire. I bring proven success across multiple areas of fundraising, including major gifts, grants, donor communications, and annual appeals."
               },
               {
                 Icon: CheckBadgeIcon,
                 title: "No learning curve",
-                body: "I’ve spent years inside hospice, recovery, and human services nonprofits, so I understand how these organizations work and what their donors respond to. That familiarity means less time spent getting oriented and more time spent moving the work forward."
+                body: "I can step in, find my footing quickly, and help you communicate impact, inspire support, and grow mission revenue. With experience in both strategy and implementation, I can help immediately to bring focus and efficiency to your fundraising efforts to support long-term growth."
               },
               {
                 Icon: AdjustmentsHorizontalIcon,
@@ -284,7 +284,7 @@ export default function Home() {
               },
               {
                 Icon: HeartIcon,
-                title: "A Partner in Purpose",
+                title: "A Partner in purpose",
                 body: "The right story and strategic messaging can make your impact clear, deepen connection, and help support grow over time. I bring that approach to organizations helping people and communities flourish."
               }
             ];

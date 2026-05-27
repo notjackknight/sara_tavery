@@ -81,7 +81,7 @@ export default function FractionalFundraising() {
             Senior fundraising leadership for the season you&rsquo;re in.
           </h1>
           <p className="font-serif text-sm text-white/90 leading-relaxed italic max-w-md mx-auto [text-shadow:0_1px_6px_rgba(15,46,57,0.5)]">
-            The judgment of a Director of Development or VP of Philanthropy, on a monthly retainer scaled to your calendar and your budget.
+            The strategic and practical support of a senior development leader, delivered through focused engagement scaled to your goals, calendar, and budget.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function FractionalFundraising() {
             Senior fundraising leadership<br className="hidden lg:block" /> for the season you&rsquo;re in.
           </h1>
           <p className="font-serif text-lg md:text-xl text-brand-navy/75 leading-relaxed max-w-2xl italic">
-            The judgment of a Director of Development or VP of Philanthropy, on a monthly retainer scaled to your calendar and your budget.
+            The strategic and practical support of a senior development leader, delivered through focused engagement scaled to your goals, calendar, and budget.
           </p>
         </div>
       </section>
